@@ -4,7 +4,8 @@ import doctor from "../assets/images/medical-doctor.webp";
 const About = () => {
     
   return (
-    <div id='about' className='about-container flex flex-col mt-5 mx-auto tracking-wider min-h-screen'>
+    <div id='about' className='about-container h-screen'>
+      <div className="flex flex-col my-auto mx-auto tracking-wider">
         <h2 className='text-[#e80ed6] text-2xl lg:text-5xl md:text:3xl font-bold text-center my-4 text-shadow'>ABOUT</h2>
         <div className='flex flex-col-reverse md:flex-row justify-between mt-5'>
         <div className='text-white md:w-2/4 my-auto mx-3'>
@@ -28,6 +29,7 @@ const About = () => {
         </div>
         <div className='md:w-2/4'>
             <img src={doctor} alt="medical doctor" className='object-cover w-auto h-auto rounded-xl' />
+        </div>
         </div>
         </div>
 

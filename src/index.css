@@ -1,0 +1,95 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .toggle-btn{
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent
+  }
+  .side-bar{
+    animation: sidebar 0.5s linear;
+  }
+
+  @keyframes sidebar {
+    0%{ width: 0;}
+    25%{width: 25%;}
+    50%{width: 35%;}
+    75%{width: 45%;}
+    100%{width: 50%;}
+
+  }
+
+  .gradient-background {
+    background: linear-gradient(300deg, #00bfff, #e80ed6, #ff4c68);
+    background-size: 180% 180%;
+    animation: gradient-animation 8s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .pattern-background{
+    background: url("./assets/images/pattern(4).svg");
+  }
+
+  .hero-page{
+    background: url("./assets/images/pexels-pixabay-39284.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+     min-height: 100vh;
+}
+
+.contact-form{
+    border: 2px solid black;
+}
+.about-container{
+  height: auto;
+}
+.text-shadow{
+  text-shadow: 2px 2px 6px #3c38a1;
+}
+
+.skill-card{
+  box-shadow:2px 2px 4px 5px #e80ed6, -2px -2px 4px 5px #e80ed6;
+  /* -webkit-filter:drop-shadow(2px 2px 4px 5px #e80ed6, -2px -2px 4px #e80ed6);
+  -moz-filter:drop-shadow(2px 2px 4px 5px #e80ed6, -2px -2px 4px #e80ed6);
+  -o-filter:drop-shadow(2px 2px 4px 5px #e80ed6, -2px -2px 4px #e80ed6); */
+  transition:all 0.5s ease-in-out;
+  animation: skill 0.5s ease-in-out infinite ;
+}
+.skill-card:hover{
+  transform: scale(1.2, 1.2);
+}
+
+@keyframes skill{
+  0%{box-shadow:2px 2px 4px 5px #e80ed6, -2px -2px 4px 5px #e80ed6 ;}
+  50%{box-shadow:2px 2px 4px 5px skyblue, -2px -2px 4px 5px skyblue ;}
+  75%{box-shadow:2px 2px 4px 5px #ef8172, -2px -2px 4px 5px #ef8172 ;}
+  100%{box-shadow:2px 2px 4px 5px #e80ed6, -2px -2px 4px 5px #e80ed6 ;}
+}
+
+.modal-container{
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+}

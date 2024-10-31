@@ -25,7 +25,7 @@ function App() {
     <Marquee>
     <Skills />
     </Marquee>
-    
+    <hr className='w-[90%] h-[4px] border-blue-500 border-solid border-2 mt-8 mx-auto text-blue-500'/>
     <Projects />
     <hr className='w-[90%] h-[4px] border-blue-500 border-solid border-2 mt-8 mx-auto text-blue-500'/>
     <Contact />

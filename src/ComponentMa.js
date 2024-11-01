@@ -98,7 +98,7 @@ import gitflavicon from "./image/icons8-github.svg";
  
  {
    id:4,
-   title: "Porfolio Website",
+   title: "My porfolio",
    imageURL: github,
    description: "This is my porfolio website. It was design with React and Tailwindcss",
    link: "https://github.com/Osesoguogho/My-porfolio.git"

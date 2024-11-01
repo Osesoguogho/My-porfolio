@@ -76,7 +76,7 @@ import gitflavicon from "./image/icons8-github.svg";
       id:1,
       title: "Blog/forum",
    imageURL: github,
-   description: "This is a blog/forum where users can read, post articles and also comments on articles. This project with build with react and tailwindCss. Express was used on the server side and mongoDb as the database. In this project there is an image slider incase user post multiple images and the pages are paginated. In the home page there is search filter that allow users to filter articles of the specified categories. There is protected route, registering and login in give u access to the protected route where user can find all the post the user has posted. here the user can edit his posts or even delete his post. The link to this code on github is posted below.",
+   description: "This is a blog/forum where users can read, post articles and also comments on articles. This project was build with React and TailwindCss. Express was used on the server side and mongoDb as the database. In this project there is an image slider incase user post multiple images and the pages are paginated. In the home page there is search filter that allow users to filter articles of the specified categories. There are protected routes also, where user can find his previous posts.",
    link: "https://github.com/Osesoguogho/blog-forum-code.git"
  },
 
@@ -100,7 +100,7 @@ import gitflavicon from "./image/icons8-github.svg";
    id:4,
    title: "Porfolio Website",
    imageURL: github,
-   description: "This my porfolio website. It was design with react and Tailwindcss",
+   description: "This is my porfolio website. It was design with React and Tailwindcss",
    link: "https://github.com/Osesoguogho/My-porfolio.git"
  }
  

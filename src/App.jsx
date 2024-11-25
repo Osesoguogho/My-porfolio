@@ -9,25 +9,44 @@ import Modal from "./component/Modal";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 import {GoArrowUp} from "react-icons/go";
+import Carousel from "./component/Carousel";
+import Services from "./component/Services";
+import Experience from './component/Experience';
+import { Parallax, Background } from 'react-parallax';
+import marine5 from './image/marine5.jpg';
+import marine7 from './image/marine7.jpg';
+import motioning from './image/motionimg.mp4';
+
 
 
 function App() {
  
 
   return (
-    <div className='pattern-background'>
-    <Navbar />
-    <Hero/>
-    <hr className='w-[90%] h-[4px] border-blue-500 border-solid border-2 mt-8 mx-auto text-blue-500'/>
+    <div className='bg-[#000b58] w-screen min-h-screen'>
+      
+      <Parallax blur={{ min: -15, max: 15 }} strength={2000}>
+      <Navbar/>
+      <Carousel/>
+    </Parallax>
+      <Parallax strength={-600} bgImage={motioning}>
     <About />
-    <hr className='w-[90%] h-[4px] border-blue-500 border-solid border-2 mt-8 mx-auto text-blue-500'/>
-    <h2 className='text-[#e80ed6] text-2xl md:text-3xl lg:text-5xl font-bold text-center my-4 text-shadow'>SKILLS</h2>
+    </Parallax>
+    <Parallax strength={900}>
+    <Experience />
+    </Parallax>
+   <div className='skills-bg'>
+    <h2 className='text-[#f1683a] text-2xl md:text-3xl lg:text-5xl font-bold text-center my-4 text-shadow p-8'>SKILLS</h2>
     <Marquee>
     <Skills />
     </Marquee>
-    <hr className='w-[90%] h-[4px] border-blue-500 border-solid border-2 mt-8 mx-auto text-blue-500'/>
+    </div>
+    
     <Projects />
-    <hr className='w-[90%] h-[4px] border-blue-500 border-solid border-2 mt-8 mx-auto text-blue-500'/>
+    {/* <hr className='w-[90%] h-[4px] border-blue-500 border-solid border-2 mt-8 mx-auto text-blue-500'/> */}
+    <Parallax strength={600} >
+    <Services />
+    </Parallax>
     <Contact />
     <button onClick={()=> window.scrollTo(0, 0)} className=" w-8 h-10 bottom-[1rem] bg-white sticky rounded-md shadow-md flex justify-center items-center float-right mr-2 z-10 cursor-pointer"> <GoArrowUp /> </button>
     <Footer />

@@ -13,8 +13,8 @@ const ProjComponents = ({project}) => {
       setShowModal(false)
      }
   return (
-    <div>
-        <div  className='w-[10rem] h-[20rem] md:w-[12rem] md:h-[17rem] rounded-lg m-5 p-4 border-2 text-white shadow-2xl transition-all gradient-background'>
+    
+        <div  className='w-[70%] h-[20rem] md:w-[60%] md:h-[18rem] rounded-lg m-5 p-4 border-2 text-white shadow-2xl transition-all bg-[rgba(0,0,0,0.4)]'>
     <img src={project.imageURL} alt="github icon" className='w-full h-[30%]' />
     <div className="text-white mx-1 mt-1 text-center">
       {project.title}
@@ -33,7 +33,7 @@ const ProjComponents = ({project}) => {
     </div>
     </div>
   
-    </div>
+   
   )
 }
 

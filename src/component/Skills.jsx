@@ -14,7 +14,8 @@ const Skills = () => {
     </div>
   ))
   return (
-    <div id="skills" className='h-auto'>
+    <div id="skills" className='min-h-screen flex justify-center items-center mt-0'>
+      
        
       <div className='my-5 flex justify-center items-center flex-wrap'>
    {mySkills}

@@ -5,11 +5,11 @@ const Modal = ({onSubmit, children}) => {
     <div onClick={(e)=> {e.target.className === "modal-container" ?
         onSubmit() : ""}
     } className='modal-container'>
-        <div className='w-[80%] bg-white flex flex-col rounded-md'>
-            <div className='flex justify-end mr-1 text-black'>
+        <div className='w-[80%] bg-[#006a67] flex flex-col rounded-md'>
+            <div className='flex justify-end mr-1 text-[#fff2d4]'>
                 <p onClick={()=> onSubmit()} className='text-2xl cursor-pointer'>&times;</p>
             </div>
-            <div className='text-2xl text-center text-black'>
+            <div className='text-2xl text-center text-[#fff2d4]'>
                 <p>{children}</p>
             </div>
              <div className='flex justify-center'>

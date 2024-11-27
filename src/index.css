@@ -450,7 +450,7 @@
 
 }
 
-@media (orientation: landscape) {
+@media only screen and (orientation: landscape) {
   .carousel .list .item .content{
     padding-right: 0;
 }

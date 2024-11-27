@@ -18,7 +18,7 @@ const About = () => {
         <h2 className=" text-[#f1683a] text-2xl lg:text-5xl md:text:3xl font-bold text-center mt-10 md:mt-2 mb-4 text-shadow p-[5%]">
           ABOUT
         </h2>
-        <div className="flex flex-col landscape:flex-row sm:flex-row md:flex-row justify-between mt-5 mb-10 md:gap-16">
+        <div className="flex flex-col landscape:flex-col sm:flex-row md:flex-row justify-between mt-5 mb-10 md:gap-16">
         <div className="md:w-2/4">
             <img
               src={doctor}

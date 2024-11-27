@@ -8,7 +8,7 @@ import { useParallax } from 'react-scroll-parallax';
 
 const Carousel = () => {
     const [carouselState, setCarouselState] = useState(false);
-    const [carouselBack, setCarouselBack] = useState(false);
+    const [carouselBack, setCarouselBack] = useState(0);
     const carouselref = useRef();
     const thumbnailref = useRef();
      const itemArray = imageArray;
@@ -16,12 +16,21 @@ const Carousel = () => {
 // thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 2000;
 let timeAutoNext = 7000;
+// let caruNext = setTimeout(() => {
+//     nextImage();
+// }, timeAutoNext);
+
+let callx = setTimeout(() => {
+    setCarouselBack(carouselBack + 1);
+}, 7000);
 
     useEffect(() => {
-        setTimeout(() => {
-            nextImage();
-        }, timeAutoNext)
-        }   )
+        
+        
+        callx;
+        nextImage()
+        
+        }, [carouselBack] )
 
      const nextImage = () => {
     //    setCarouselState(true);

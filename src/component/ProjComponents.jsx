@@ -14,7 +14,7 @@ const ProjComponents = ({project}) => {
      }
   return (
     
-        <div  className='w-[70%] h-[20rem] md:w-[60%] md:h-[18rem] rounded-lg m-5 p-4 border-2 text-white shadow-2xl transition-all bg-[rgba(0,0,0,0.4)]'>
+        <div  className='w-[70vw] h-[20rem] md:w-[40vw] md:h-[18rem] lg:w-[30vw] rounded-lg m-5 p-4 border-2 text-white shadow-2xl transition-all bg-[rgba(0,0,0,0.4)]'>
     <img src={project.imageURL} alt="github icon" className='w-full h-[30%]' />
     <div className="text-white mx-1 mt-1 text-center">
       {project.title}

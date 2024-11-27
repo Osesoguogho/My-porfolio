@@ -18,7 +18,7 @@ const Navbar = () => {
         <button
           onClick={toggleButton}
           className={`md:hidden togglebtn ${
-            showMenu ? "toggle-btn absolute top-1" : ""
+            showMenu ? "toggle-btn top-1 hidden" : ""
           } relative w-8 h-8 bg-black cursor-pointer z-20`}
         >
           <div className='bg-white w-8 h-1 transition-all duration-500 
@@ -33,67 +33,76 @@ const Navbar = () => {
           className={`flex md:gap-10 
             md:justify-end text-white md:items-center md:mx-8 font-bold`}
         >
-          <a href="#about">
+          <a href="#about" className="hover:underline">
             <li>About</li>
           </a>
-          <a href="#skills">
+          <a href="#skills" className="hover:underline">
             <li>skills</li>
           </a>
-          <a href="#projects">
+          <a href="#projects" className="hover:underline">
             <li>Projects</li>
           </a>
-          <a href="#contact">
+          <a href="#contact" className="hover:underline">
             <li>Contact</li>
           </a>
         </ul>
         </div>
         {showMenu && (
           <div
-            className={`min-h-screen header md:hidden bg-gray-800
-               text-white transition-all ease-in-out absolute top-0 right-0 
+            className={`h-[100%] header md:hidden bg-gray-800
+               text-white transition-all ease-in-out top-0 right-0 
                space-y-4 fixed w-[80%] ${
               showMenu ? "side-bar" : "w-[80%]"
             } pt-8`}
           >
+            <button
+          onClick={toggleButton}
+          className={`md:hidden togglebtn ${
+            showMenu ? "toggle-btn -translate-y-2 float-right" : ""
+          } relative w-8 h-8 bg-black cursor-pointer z-20`}
+        >
+          <div className='bg-white w-8 h-1 transition-all duration-500 
+          rounded absolute top-4 -mt-0.5 before:content-[""] before:bg-white 
+          before:w-8 before:h-1 before:rounded before:absolute before:transition-all 
+          before:duration-500 before:-translate-x-4 before:-translate-y-3 after:content-[""]
+           after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 
+           after:translate-y-3 after:transition-all after:duration-500 '></div>
+        </button>
             <ul
               className={`md:hidden flex flex-col justify-center w-full 
-                mx-auto my-10 items-center mx-8 font-bold`}
+                mx-auto my-10 items-center font-bold`}
             >
               <a
-                onClick={toggleButton}
+                
                 href="#about"
-                className="mb-10 w-full text-center py-4 hover:border-2
-                 hover:border-white hover:border-solid"
+                className="mb-10 w-full text-center py-4 hover:underline"
               >
                 
-                <li> About</li>
+                <li className=""> About</li>
               </a>
               <a
-                onClick={toggleButton}
+                
                 href="#skills"
-                className="mb-10 w-full text-center py-4 hover:border-2
-                 hover:border-white hover:border-solid"
+                className="mb-10 w-full text-center py-4 hover:underline"
               >
-                {" "}
-                <li> skills</li>{" "}
+                
+                <li> skills</li>
               </a>
               <a
-                onClick={toggleButton}
+               
                 href="#projects"
-                className="mb-10 w-full text-center py-4 hover:border-2
-                 hover:border-white hover:border-solid"
+                className="mb-10 w-full text-center py-4 hover:underline"
               >
               
                 <li> projects</li>
               </a>
               <a
-                onClick={toggleButton}
+               
                 href="#contact"
-                className="mb-10 w-full text-center py-4 hover:border-2
-                 hover:border-white hover:border-solid"
+                className="mb-10 w-full text-center py-4 hover:underline"
               >
-                {" "}
-                <li> contact</li>{" "}
+                
+                <li> contact</li>
               </a>
             </ul>
           </div>

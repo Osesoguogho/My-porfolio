@@ -111,16 +111,37 @@
   background: url('./image/marine5.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  -webkit-background-size: cover;
+  -webkit-background-attachment: fixed;
+ -moz-background-size: cover;
+  -moz-background-attachment: fixed;
+
 }
 .parallax3{
   background: url('./image/marine7.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  background-attachment: fixed;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  -webkit-background-size: cover;
+  -webkit-background-attachment: fixed;
+ -moz-background-size: cover;
+  -moz-background-attachment: fixed;
 }
 .skills-bg{
   background: url('./image/marine6.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  background-attachment: fixed;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  -webkit-background-size: cover;
+  -webkit-background-attachment: fixed;
+ -moz-background-size: cover;
+  -moz-background-attachment: fixed;
   margin-top: 8px;
 }
 

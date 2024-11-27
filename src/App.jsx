@@ -29,7 +29,7 @@ function App() {
       <Navbar/>
       <Carousel/>
     </Parallax>
-      <Parallax strength={-600} bgImage={motioning}>
+      <Parallax strength={300} bgImage={marine5}>
     <About />
     </Parallax>
     <Parallax strength={900}>

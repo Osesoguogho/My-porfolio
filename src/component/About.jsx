@@ -19,11 +19,11 @@ const About = () => {
           ABOUT
         </h2>
         <div className="flex flex-col sm:flex-row md:flex-row justify-between mt-5 mb-10 md:gap-8">
-        <div className="md:w-2/4">
+        <div className="md:w-2/4 landscape:shrink-0">
             <img
               src={doctor}
               alt="medical doctor"
-              className="object-cover rounded-xl mx-auto shadow-2xl landscape:shrink-0"
+              className="object-cover rounded-xl mx-auto shadow-2xl"
               height={400}
               width={400}
             />

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="parallax min-h-screen md:h-screen lg:min-h-screen
+      className="parallax min-h-screen w-screen md:h-screen lg:min-h-screen
     flex justify-center items-center mt-0"
     >
       <div
@@ -18,12 +18,12 @@ const About = () => {
         <h2 className=" text-[#f1683a] text-2xl lg:text-5xl md:text:3xl font-bold text-center mt-10 md:mt-2 mb-4 text-shadow p-[5%]">
           ABOUT
         </h2>
-        <div className="flex flex-col landscape:flex-col sm:flex-row md:flex-row justify-between mt-5 mb-10 md:gap-16">
+        <div className="flex flex-col sm:flex-row md:flex-row justify-between mt-5 mb-10 md:gap-8">
         <div className="md:w-2/4">
             <img
               src={doctor}
               alt="medical doctor"
-              className="object-cover rounded-xl mx-auto shadow-2xl"
+              className="object-cover rounded-xl mx-auto shadow-2xl landscape:shrink-0"
               height={400}
               width={400}
             />
@@ -33,7 +33,7 @@ const About = () => {
               <h3 className="text-xl md:text-3xl lg:4xl font-bold my-3">
                 Dr Code: A Doctor and a Web Developer
               </h3>
-              <p className="text-md md:text-md lg:text-xl font-bold">
+              <p className="text-md md:text-md lg:text-xl font-bold md:mr-2 pr-4">
                 In the intersection of Technology and healthcare, there exist a
                 unique breed bridging the gap between Medicine and technology. I
                 am a qualified physician and a skilled web developer. I have a

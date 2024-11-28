@@ -450,17 +450,17 @@
 
 }
 
-@media only screen and (orientation: landscape) {
-  .carousel .list .item .content{
+@media  (orientation: landscape) {
+  /* .carousel .list .item .content{
     padding-right: 0;
-}
-.carousel .list .item .content .firstname,
+} */
+/* .carousel .list .item .content .firstname,
 .carousel .list .item .content .lastname{
     font-size: 30px;
 }
 .carousel .list .item .content .work{
   font-size: 24px ;
-}
+} */
 }
 
 
